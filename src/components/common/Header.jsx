@@ -27,7 +27,7 @@ export const Logo = ({ style }) => <h2 style={style}>Hunarmand</h2>;
 export default function Header() {
   const currentPath = useCurrentPath();
   return (
-    <Row justify="space-between" align="bottom" style={{ marginTop: "100px" }}>
+    <Row justify="space-between" align="bottom" style={{ marginTop: "60px" }}>
       <Col span={12}>
         <Logo />
       </Col>
@@ -37,7 +37,7 @@ export default function Header() {
             const key = Object.keys(route)[0];
             const value = route[key];
             return (
-              <Col>
+              <Col key={key}>
                 <MenuItems
                   to={value}
                   style={currentPath === value ? styles.active : undefined}

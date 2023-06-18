@@ -28,6 +28,11 @@ const VerticalContainer = styled(Row)`
   flex-direction: column;
 `;
 
+const FooterLink = styled.a`
+  text-decoration: none;
+  color: #ffffff;
+`;
+
 export default function Footer() {
   return (
     <Container>
@@ -80,15 +85,17 @@ export default function Footer() {
               <Col>
                 <h5>
                   <PhoneFilled style={{ marginRight: "10px" }} />
-                  <a href="tel:406-555-0120">(406) 555-0120 </a>
+                  <FooterLink href="tel:406-555-0120">
+                    (406) 555-0120{" "}
+                  </FooterLink>
                 </h5>
               </Col>
               <Col>
                 <h5>
                   <MailFilled style={{ marginRight: "10px" }} />
-                  <a href="mailto:mangcoding123@gmail.com">
+                  <FooterLink href="mailto:mangcoding123@gmail.com">
                     mangcoding123@gmail.com
-                  </a>
+                  </FooterLink>
                 </h5>
               </Col>
             </VerticalContainer>

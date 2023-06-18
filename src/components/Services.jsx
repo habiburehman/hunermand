@@ -5,17 +5,22 @@ import styled from "styled-components";
 
 const Heading = styled.h1`
   text-align: ${({ align }) => align};
+  color: #a42121;
+  margin-bottom: 0px;
 `;
 
 export default function Services() {
   return (
-    <Row>
+    <Row style={{ marginTop: "100px" }}>
       <Col span={24}>
         <Section
           leftContent={
             <Row>
               <Col span={24}>
-                <h1>Empowering Start-up&apos;s to soar Beyond Boundaries!</h1>
+                <div style={{ fontSize: "42px", fontWeight: "bold" }}>
+                  <span style={{ color: "#A42121" }}>Empowering</span>{" "}
+                  Start-up&apos;s to Soar Beyond Boundaries!
+                </div>
               </Col>
               <Col span={24}>
                 <p>
