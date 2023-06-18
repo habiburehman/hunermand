@@ -2,6 +2,12 @@ import React from "react";
 import { Row, Col } from "antd";
 import styled from "styled-components";
 import { Logo } from "./Header";
+import {
+  PhoneFilled,
+  MailFilled,
+  FacebookOutlined,
+  LinkedinOutlined,
+} from "@ant-design/icons";
 
 const Container = styled(Row)`
   position: absolute;
@@ -15,31 +21,98 @@ const Container = styled(Row)`
 
 const MidsectionHeadings = styled.h4`
   margin: 0px;
+  margin-bottom: 40px;
+`;
+
+const VerticalContainer = styled(Row)`
+  flex-direction: column;
 `;
 
 export default function Footer() {
   return (
     <Container>
-      <Col span={6}>
+      <Col lg={6}>
         <Logo
           style={{ marginLeft: "69px", marginTop: "0px", marginBottom: "0px" }}
         />
       </Col>
-      <Col span={12} style={{ marginTop: "20px" }}>
+      <Col lg={11} style={{ marginTop: "20px" }}>
         <Row justify="space-around">
           <Col>
-            <MidsectionHeadings>Pages</MidsectionHeadings>
+            <VerticalContainer>
+              <Col>
+                <MidsectionHeadings>Pages</MidsectionHeadings>
+              </Col>
+              <Col>
+                <h5>Home</h5>
+              </Col>
+              <Col>
+                <h5>Services</h5>
+              </Col>
+              <Col>
+                <h5>Blog</h5>
+              </Col>
+              <Col>
+                <h5>Book a call</h5>
+              </Col>
+            </VerticalContainer>
           </Col>
           <Col>
-            <MidsectionHeadings>Service</MidsectionHeadings>
+            <VerticalContainer>
+              <MidsectionHeadings>Service</MidsectionHeadings>
+              <Col>
+                <h5>Expert Guidance</h5>
+              </Col>
+              <Col>
+                <h5>Networking Opportunities</h5>
+              </Col>
+              <Col>
+                <h5>Business Strategy Development</h5>
+              </Col>
+              <Col>
+                <h5>Funding and Investment Advice</h5>
+              </Col>
+            </VerticalContainer>
           </Col>
           <Col>
-            <MidsectionHeadings>Contact</MidsectionHeadings>
+            <VerticalContainer>
+              <MidsectionHeadings>Contact</MidsectionHeadings>
+              <Col>
+                <h5>
+                  <PhoneFilled style={{ marginRight: "10px" }} />
+                  <a href="tel:406-555-0120">(406) 555-0120 </a>
+                </h5>
+              </Col>
+              <Col>
+                <h5>
+                  <MailFilled style={{ marginRight: "10px" }} />
+                  <a href="mailto:mangcoding123@gmail.com">
+                    mangcoding123@gmail.com
+                  </a>
+                </h5>
+              </Col>
+            </VerticalContainer>
           </Col>
         </Row>
       </Col>
-      <Col span={8}>
-        <></>
+      <Col md={12} lg={3} style={{ marginTop: "20px" }}>
+        <Row>
+          <VerticalContainer>
+            <MidsectionHeadings>Social Media</MidsectionHeadings>
+            <Row gutter={16}>
+              <Col>
+                <h5>
+                  <FacebookOutlined style={{ fontSize: "1.83em" }} />
+                </h5>
+              </Col>
+              <Col>
+                <h5>
+                  <LinkedinOutlined style={{ fontSize: "1.83em" }} />
+                </h5>
+              </Col>
+            </Row>
+          </VerticalContainer>
+        </Row>
       </Col>
     </Container>
   );
