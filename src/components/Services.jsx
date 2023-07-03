@@ -109,7 +109,7 @@ export default function Services() {
         <Heading align="left">Ignite Your Startup Revolution:</Heading>
       </Col>
       <Col span={18}>
-        <p>
+        <p style={{ marginBottom: "2.3em" }}>
           Join the revolution at Hunarmand and witness the extraordinary unfold.
           Together, we'll shatter the boundaries of what's possible, rewrite the
           rules of success, and forge a new era of entrepreneurial brilliance.
