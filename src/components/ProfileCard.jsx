@@ -23,6 +23,7 @@ const ProfileName = styled.p`
 const ProfileDesignation = styled.p`
   font-size: 1.5em;
   margin-top: 0px;
+  text-align: center;
 `;
 
 export default function ProfileCard({ name, designation }) {

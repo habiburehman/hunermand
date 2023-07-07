@@ -7,6 +7,9 @@ import useCurrentPath from "../../hooks/useCurrentPath";
 const MenuItems = styled(Link)`
   font-size: 1.5em;
   color: #000000;
+  &:hover {
+    color: #b564f7;
+  }
 `;
 
 const styles = {
