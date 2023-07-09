@@ -7,6 +7,12 @@ import ContactButton from "./common/ContactButton";
 import HomeContact from "../assets/home-contact.jpg";
 import HomeStartup from "../assets/home-startup.jpg";
 import HomeCover from "../assets/home-cover.jpg";
+import AbdolaMunir from "../assets/abdola-munir.png";
+import AbdulHanan from "../assets/abdul-hanan.png";
+import ArishNadeem from "../assets/arish-nadeem.png";
+import FahadAbbas from "../assets/fahad-abbas.png";
+import WamiqShad from "../assets/wamiq-shad.png";
+import HejabSyed from "../assets/hejab-syed.png";
 
 const Heading = styled.h1`
   text-align: ${({ align }) => align};
@@ -100,36 +106,42 @@ export default function Home() {
             <ProfileCard
               name="Fahad Abbas"
               designation="(Product Design & Startup Growth Guru)"
+              image={FahadAbbas}
             />
           </Col>
           <Col span={8}>
             <ProfileCard
               name="Wamiq A Shad"
               designation="(Finance & Product Specialist)"
+              image={WamiqShad}
             />
           </Col>
           <Col span={8}>
             <ProfileCard
               name="Arish Nadeem"
               designation="(Startup & Marketing Guru)"
+              image={ArishNadeem}
             />
           </Col>
           <Col span={8}>
             <ProfileCard
-              name="Fahad Abbas"
-              designation="(Product Design & Startup Growth Guru)"
+              name="Abdola Munir"
+              designation="(Product Design & Startup Growth Specialist)"
+              image={AbdolaMunir}
             />
           </Col>
           <Col span={8}>
             <ProfileCard
-              name="Wamiq A Shad"
-              designation="(Finance & Product Specialist)"
+              name="Abdul Hannan"
+              designation="(Product Specialist)"
+              image={AbdulHanan}
             />
           </Col>
           <Col span={8}>
             <ProfileCard
-              name="Arish Nadeem"
-              designation="(Startup & Marketing Guru)"
+              name="Hejab Syed"
+              designation="Life Coach"
+              image={HejabSyed}
             />
           </Col>
         </Row>

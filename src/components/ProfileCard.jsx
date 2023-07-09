@@ -8,10 +8,13 @@ const Container = styled(Row)`
 
 const ProfilePic = styled.div`
   background-color: #b564f7;
+  background-image: url(${({ path }) => path});
   width: 200px;
   height: 200px;
   border-radius: 200px;
   margin-bottom: 16px;
+  background-size: cover;
+  background-position: center center;
 `;
 
 const ProfileName = styled.p`
@@ -26,11 +29,11 @@ const ProfileDesignation = styled.p`
   text-align: center;
 `;
 
-export default function ProfileCard({ name, designation }) {
+export default function ProfileCard({ name, designation, image }) {
   return (
     <Container align="middle">
       <Col>
-        <ProfilePic />
+        <ProfilePic path={image}></ProfilePic>
       </Col>
       <Col>
         <ProfileName>{name}</ProfileName>
