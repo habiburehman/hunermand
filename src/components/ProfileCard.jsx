@@ -19,12 +19,10 @@ const ProfilePic = styled.div`
 
 const ProfileName = styled.p`
   font-weight: 700;
-  font-size: 1.5em;
   margin: 0px;
 `;
 
 const ProfileDesignation = styled.p`
-  font-size: 1.5em;
   margin-top: 0px;
   text-align: center;
 `;

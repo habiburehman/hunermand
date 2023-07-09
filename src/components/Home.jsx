@@ -1,8 +1,9 @@
 import React from "react";
 import Section from "./common/Section";
-import { Row, Col } from "antd";
+import { Row, Col, Button } from "antd";
 import styled from "styled-components";
 import ProfileCard from "./ProfileCard";
+import PageMainHeading from "./common/PageMainHeading";
 import ContactButton from "./common/ContactButton";
 import HomeContact from "../assets/home-contact.jpg";
 import HomeStartup from "../assets/home-startup.jpg";
@@ -27,6 +28,17 @@ const ButtonContainer = styled.div`
   height: 100%;
 `;
 
+const DiscoverExpertButtons = styled(Button)`
+  background: #a42121;
+  color: #ffffff;
+  border-radius: 0 !important;
+  &:hover {
+    background-color: #a42121 !important;
+    color: #ffffff !important;
+    cursor: default !important;
+  }
+`;
+
 export default function Home() {
   return (
     <Row style={{ marginTop: "100px" }} justify="center" gutter={[0, 120]}>
@@ -35,30 +47,32 @@ export default function Home() {
           leftContent={
             <Row>
               <Col span={24}>
-                <div
-                  style={{
-                    fontSize: "42px",
-                    fontWeight: "bold",
-                    color: "#A42121",
-                  }}
-                >
-                  Unlock Your Startup&apos;s Potential
-                </div>
+                <PageMainHeading color="#A42121">
+                  Unlock Your Potential With Hunarmand!
+                </PageMainHeading>
               </Col>
               <Col span={24}>
                 <p>
-                  At Hunarmand, we believe in the power of entrepreneurship. We
-                  are here to provide comprehensive support, guidance, and
-                  resources to help aspiring entrepreneurs turn their startup
-                  dreams into reality. Whether you're just starting out or
-                  looking to take your startup to the next level, we have the
-                  tools and expertise to support your journey.
+                  At Hunarmand, we empower aspiring entrepreneurs to turn their
+                  startup dreams into reality. Our comprehensive support,
+                  guidance, and resources are designed to help you succeed,
+                  whether you're starting out or taking your venture to the next
+                  level. Not just limited to startups, we also nurture personal
+                  and career growth. Unlock your full potential and thrive in
+                  all aspects of your journey!
                 </p>
               </Col>
             </Row>
           }
           rightContent={
-            <div style={{ display: "flex", justifyContent: "center" }}>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                height: "100%",
+              }}
+            >
               <img
                 src={HomeStartup}
                 width="400px"
@@ -94,6 +108,45 @@ export default function Home() {
             </Heading>
           </Col>
         </Row>
+      </Col>
+      <Col span={24}>
+        <Section
+          leftContent={
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
+              <DiscoverExpertButtons size="large">
+                Unmatched Expertise
+              </DiscoverExpertButtons>
+              <p>Inspirational Encounters</p>
+            </div>
+          }
+          rightContent={
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
+              <p>Transformational Growth</p>
+              <DiscoverExpertButtons size="large">
+                Strategic Networking
+              </DiscoverExpertButtons>
+            </div>
+          }
+        />
+      </Col>
+      <Col span={24}>
+        <p style={{ textAlign: "center" }}>
+          Your All-in-One Resource for Success
+        </p>
       </Col>
       <Col span={10}>
         <Heading align="center" marginbottom="100px">
@@ -140,7 +193,7 @@ export default function Home() {
           <Col span={8}>
             <ProfileCard
               name="Hejab Syed"
-              designation="Life Coach"
+              designation="(Life Coach)"
               image={HejabSyed}
             />
           </Col>

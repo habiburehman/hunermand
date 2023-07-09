@@ -2,6 +2,7 @@ import React from "react";
 import Section from "./common/Section";
 import { Row, Col } from "antd";
 import styled from "styled-components";
+import PageMainHeading from "./common/PageMainHeading";
 
 const Heading = styled.h1`
   text-align: ${({ align }) => align};
@@ -17,10 +18,10 @@ export default function Services() {
           leftContent={
             <Row>
               <Col span={24}>
-                <div style={{ fontSize: "42px", fontWeight: "bold" }}>
+                <PageMainHeading>
                   <span style={{ color: "#A42121" }}>Empowering</span>{" "}
                   Start-up&apos;s to Soar Beyond Boundaries!
-                </div>
+                </PageMainHeading>
               </Col>
               <Col span={24}>
                 <p>
