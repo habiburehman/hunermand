@@ -19,6 +19,7 @@ const Heading = styled.h1`
   text-align: ${({ align }) => align};
   color: #a42121;
   margin-bottom: ${({ marginbottom }) => (marginbottom ? marginbottom : 0)};
+  font-size: 2.1em;
 `;
 
 const ButtonContainer = styled.div`
@@ -41,7 +42,7 @@ const DiscoverExpertButtons = styled(Button)`
 
 export default function Home() {
   return (
-    <Row style={{ marginTop: "100px" }} justify="center" gutter={[0, 120]}>
+    <Row style={{ marginTop: "100px" }} justify="center" gutter={[0, 68]}>
       <Col span={24}>
         <Section
           leftContent={
@@ -76,7 +77,7 @@ export default function Home() {
               <img
                 src={HomeStartup}
                 width="400px"
-                height="300px"
+                height="auto"
                 alt="Unlock startup's potential"
               />
             </div>
@@ -84,7 +85,7 @@ export default function Home() {
         />
       </Col>
       <Col span={24}>
-        <img src={HomeCover} width="100%" height="580px" alt="Discuss Ideas" />
+        <img src={HomeCover} width="100%" height="auto" alt="Discuss Ideas" />
       </Col>
       <Col span={10}>
         <Heading align="center">
@@ -228,7 +229,7 @@ export default function Home() {
               <img
                 src={HomeContact}
                 width="500px"
-                height="500px"
+                height="auto"
                 alt="Contact Us"
               />
             </div>
