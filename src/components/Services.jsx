@@ -13,63 +13,61 @@ const Heading = styled.h1`
 `;
 
 const Container = styled(Row)`
-  background-size: 100px;
   background: radial-gradient(
-    rgba(255, 200, 200, 0.5),
-    rgba(255, 200, 200, 0.1)
+    55% 50% at center,
+    rgba(200, 140, 249, 0.5),
+    rgba(200, 140, 249, 0)
   );
+
   backdrop-filter: blur(10px);
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `;
 
 export default function Services() {
   return (
     <Row style={{ marginTop: "100px" }}>
       <Col span={24}>
+        <Col span={24}>
+          <Section
+            leftContent={
+              <Row>
+                <Col span={24}>
+                  <PageMainHeading>
+                    <span style={{ color: "#A42121" }}>Empowering</span>{" "}
+                    Start-up&apos;s to Soar Beyond Boundaries!
+                  </PageMainHeading>
+                </Col>
+                <Col span={24}>
+                  <p>
+                    At Hunermand, we&apos;re not just another counseling service
+                    for startups. We&apos;re a dynamic force that fuels
+                    innovation, propels growth and breaks the barriers holding
+                    you back. Prepare to embark on an exhilarating journey of
+                    entrpreneurial trahsformation like no other!
+                  </p>
+                </Col>
+              </Row>
+            }
+            rightContent={
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  height: "100%",
+                }}
+              >
+                <img
+                  src={BusinessConcept}
+                  width="400px"
+                  height="auto"
+                  alt="Business Concept"
+                />
+              </div>
+            }
+          />
+        </Col>
         <Container>
-          <Col span={24}>
-            <Section
-              leftContent={
-                <Row>
-                  <Col span={24}>
-                    <PageMainHeading>
-                      <span style={{ color: "#A42121" }}>Empowering</span>{" "}
-                      Start-up&apos;s to Soar Beyond Boundaries!
-                    </PageMainHeading>
-                  </Col>
-                  <Col span={24}>
-                    <p>
-                      At Hunermand, we&apos;re not just another counseling
-                      service for startups. We&apos;re a dynamic force that
-                      fuels innovation, propels growth and breaks the barriers
-                      holding you back. Prepare to embark on an exhilarating
-                      journey of entrpreneurial trahsformation like no other!
-                    </p>
-                  </Col>
-                </Row>
-              }
-              rightContent={
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    height: "100%",
-                  }}
-                >
-                  <img
-                    src={BusinessConcept}
-                    width="400px"
-                    height="auto"
-                    alt="Business Concept"
-                  />
-                </div>
-              }
-            />
-          </Col>
           <Col span={24}>
             <Heading align="left">Interactive Tools:</Heading>
           </Col>
